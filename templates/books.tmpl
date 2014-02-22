@@ -1,0 +1,21 @@
+<div class="panel panel-default">
+  <div class="panel-heading"><h1>Books</h1></div>
+  <div class="panel-body">
+    <p>List of books. See repo for SQL dump.</p>
+  </div>
+
+  <table class="table">
+    <tr>
+      <th>Title</th>
+      <th>Author</th>
+      <th>Description</th>
+    </tr>
+  {{ range . }}
+    <tr>
+      <td>{{ .Title }}</td>
+      <td>{{ .Author }}</td>
+      <td>{{ .Description }}</td>
+    </tr>
+  {{ end }}
+  </table>
+</div>
